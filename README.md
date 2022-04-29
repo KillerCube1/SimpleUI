@@ -14,13 +14,7 @@ new UI().type("ActionForm")
             new Element().button("May")
         ])
         .responses([
-            new Response(),
-            new Response(),
-            new Response(foo)
+            new Response(3, function(player){ player.runCommand("say I like April too!") })
         ])
         .execute(player);
-
-function foo(player) {
-  
-}
 ```
