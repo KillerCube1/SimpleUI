@@ -54,8 +54,8 @@ new UI().type("ActionForm")
         .title("Tutorial title")
         .body("Click any button to see more!")
         .buttons([
-           new Element.button("example1"),
-           new Element.button("example2")
+           new Element().button("example1"),
+           new Element().button("example2")
         ])
 ```
 
@@ -69,10 +69,10 @@ new UI().type("ActionForm")
         .title("Tutorial title")
         .body("Click any button to see more!")
         .buttons([
-           new Element.button("example1"),
-           new Element.button("example2")
+           new Element().button("example1"),
+           new Element().button("example2")
         ])
-        .reponses([
+        .responses([
            new Response(0),
            new Response(1)
         ])
@@ -88,10 +88,10 @@ new UI().type("ActionForm")
         .title("Tutorial title")
         .body("Click any button to see more!")
         .buttons([
-           new Element.button("example1"),
-           new Element.button("example2")
+           new Element().button("example1"),
+           new Element().button("example2")
         ])
-        .reponses([
+        .responses([
            new Response(0, function(player) { player.runCommand("say hello") }),
            new Response(1)
         ])
@@ -107,17 +107,17 @@ new UI().type("ActionForm")
         .title("Tutorial title")
         .body("Click any button to see more!")
         .buttons([
-           new Element.button("example1"),
-           new Element.button("example2")
+           new Element().button("example1"),
+           new Element().button("example2")
         ])
-        .reponses([
+        .responses([
            new Response(0, function(player) { player.runCommand("say hello") }),
            new Response(1, new UI().type("MessageForm")
                                    .title("Sub menu")
                                    .body("This was all done with the module created by: KillerCube")
                                    .buttons([
-                                      new Element.button("okay"),
-                                      new Element.button("cool")
+                                      new Element().button("okay"),
+                                      new Element().button("cool")
                                    ])
            )
         ])
@@ -133,17 +133,17 @@ new UI().type("ActionForm")
         .title("Tutorial title")
         .body("Click any button to see more!")
         .buttons([
-           new Element.button("example1"),
-           new Element.button("example2")
+           new Element().button("example1"),
+           new Element().button("example2")
         ])
-        .reponses([
+        .responses([
            new Response(0, function(player) { player.runCommand("say hello") }),
            new Response(1, new UI().type("MessageForm")
                                    .title("Sub menu")
                                    .body("This was all done with the module created by: KillerCube")
                                    .buttons([
-                                      new Element.button("okay"),
-                                      new Element.button("cool")
+                                      new Element().button("okay"),
+                                      new Element().button("cool")
                                    ])
            )
         ])
