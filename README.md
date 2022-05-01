@@ -20,6 +20,14 @@ new UI().type("ActionForm")
 ```
 ![](https://i.ibb.co/4pwtHSn/Capture3.png)
 
+
+
+## Table Of Contents
+* [How To Create A UI](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#how-to-create-a-ui)
+* [Classes](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#classes)
+
+
+
 ## How To Create A UI
 To create one of these UI's it is highly recommended that you have a little bit of prior knowledge on creating JavaScript code, but this tutorial will take you step by step on how you can create your very own UI with this module. All code follows closely along with the documentation on the `mojang-minecraft-ui` module: https://docs.microsoft.com/en-us/minecraft/creator/scriptapi/mojang-minecraft-ui/mojang-minecraft-ui
 
@@ -149,3 +157,112 @@ new UI().type("ActionForm")
         ])
         .execute(player);
 ```
+
+
+
+## Classes
+* [UI](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#ui)
+* [Element](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#element)
+* [Response](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#response)
+* [Feedback](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#feedback)
+* [Button](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#button)
+* [Dropdown](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#dropdown)
+* [Icon](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#icon)
+* [Slider](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#slider)
+* [TextField](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#textfield)
+* [Toggle](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#toggle)
+
+## UI
+Main UI class for creating UI.
+
+### Functions
+* [constructor](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#constructor)
+* [type](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#type)
+* [title](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#title)
+* [body](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#body)
+* [buttons](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#buttons)
+* [layout](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#layout)
+* [feedback](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#feedback)
+* [responses](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#responses)
+* [execute](https://github.com/KillerCube1/SimpleUI/edit/main/README.md#execute)
+
+### constructor
+
+`new UI()`
+
+Builds a UI that can be executed later with the function `UI.execute(<player>)`.
+
+### type
+
+`type(type: string)`
+
+Sets the type of UI to display.
+
+### title
+
+`title(title: string)`
+
+Sets the title of the UI.
+
+### body
+
+`body(body: string)`
+
+Sets the body of the UI.
+
+### buttons
+
+`buttons(buttons: Button[])`
+
+Creates buttons for the UI (**NOT** available with ModalForm).
+
+### layout
+
+`layout(layout: any[])`
+
+Creates a layout for the UI (**ONLY** used with ModalForm).
+
+### feedback
+
+`feedback(feedback: Feedback)`
+
+Prepares function to run once a response is given (**ONLY** used with ModalForm).
+
+### responses
+
+`responses(responses: Response[])`
+
+Prepares response actions to take once a response is given (**NOT** available with ModalForm).
+
+### execute
+
+`execute(player: Player)`
+
+Shows and runs the UI to the given player.
+
+## Element
+Main element class that contains all UI elements (Raw classes are available for each element).
+
+## Response
+Response for UI.
+
+## Feedback
+Feedback for UI (used for ModalForm).
+
+## Button
+Button for UI.
+
+## Dropdown
+Dropdown for UI (ModalForm ONLY).
+
+## Icon
+Icon for UI (ModalForm ONLY).
+
+## Slider
+Slider for UI (ModalForm ONLY).
+
+## TextField
+TextField for UI (ModalForm ONLY).
+
+## Toggle
+Toggle for UI (ModalForm ONLY).
