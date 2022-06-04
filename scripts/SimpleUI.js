@@ -13,13 +13,6 @@
  */
 
 
-
-/**
- * TODO:
- * - Add response detection for closing UI
- */
-
-
 import { ActionFormData, ActionFormResponse, ModalFormData, ModalFormResponse, MessageFormData, MessageFormResponse } from 'mojang-minecraft-ui';
 
 
